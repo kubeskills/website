@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "KubeSkills"
 
 # Language settings
 contentDir = "content/en"
@@ -60,13 +60,13 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Goldydocs"
+title = "KubeSkills"
 description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.no]
-title = "Goldydocs"
+title = "KubeSkills"
 description = "Docsy er operativsystem for skyen"
 languageName ="Norsk"
 contentDir = "content/no"
