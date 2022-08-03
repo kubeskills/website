@@ -60,8 +60,8 @@ id = "G-F10ZH5W6FW"
 
 [languages]
 [languages.en]
-title = "Goldydocs"
-description = "A Docsy example site"
+title = "KubeSkills"
+description = "Kubernetes proving ground"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
