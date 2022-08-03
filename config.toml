@@ -60,13 +60,13 @@ id = "G-F10ZH5W6FW"
 
 [languages]
 [languages.en]
-title = "KubeSkills"
+title = "Goldydocs"
 description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.no]
-title = "KubeSkills"
+title = "Goldydocs"
 description = "Docsy er operativsystem for skyen"
 languageName ="Norsk"
 contentDir = "content/no"
