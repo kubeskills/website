@@ -1,0 +1,192 @@
+.body .pricing-cardbody {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.pricing-card {
+    /*flex: 1;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    /* Set a higher z-index to make it appear above */
+}
+
+.pricing-card.center {
+    /* flex: 1.2; */
+    margin-top: -20px;
+    /* Move the center card slightly above */
+    background-color: #f0f0f0;
+    /* Change background color to appear embossed */
+}
+
+.pricing-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price-card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li .price-card-features {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #8e24aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.gradient-background {
+    background: radial-gradient(circle at 0.5% 50%, #9481d1, #62498b, transparent);
+}
+
+.gradient-background-left {
+    background: linear-gradient(to bottom right #32235e, #62498b);
+}
+
+.gradient-background-right {
+    background: radial-gradient(circle at -5% -20%, #32235e, #593774), transparent;
+}
+
+.pricing-plans {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line on small screens */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 -10px;
+    /* Remove margin between plans */
+}
+
+.pricing-plan {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-plan.center {
+    transform: translateY(-20px);
+    /* Elevate the center plan */
+    z-index: 2;
+    /* Make it appear above the others */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /* Add bold font to all h2 */
+}
+
+.price {
+    font-size: 48px;
+    /* Increase font size for price */
+    font-weight: bold;
+    /* Add bold font to price */
+    margin-bottom: 10px;
+}
+
+p {
+    opacity: 0.7;
+    /* Add transparency to "per year," "one time," and "per month" */
+}
+
+h3 strong {
+    font-weight: bold;
+    /* Add bold font to "Book Course," "Pro," and "Pro Plus" */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+    position: relative;
+    /* Add relative position for the lines */
+    color: #f0f0f0
+}
+
+button {
+    background-color: #8e24aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: normal;
+    /* Remove bold font from buttons */
+}
+
+/* Media queries for adjusting the layout on smaller screens */
+@media (max-width: 768px) {
+    .pricing-plan {
+        flex: 0 0 calc(100% - 20px);
+        /* Full width, minus margin */
+    }
+}
+
+/* Media queries for adjusting the layout on even smaller screens */
+@media (max-width: 480px) {
+    .pricing-plan.center {
+        transform: none;
+        /* Remove elevation for very small screens */
+        margin-bottom: 20px;
+        /* Add spacing between cards */
+    }
+}
+
+
+/* Style the specific list items with a class */
+.special-list-item {
+    position: relative;
+    /* Add relative position for the lines */
+}
+
+/* Add a translucent white line below the specific list items */
+.special-list-item::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}

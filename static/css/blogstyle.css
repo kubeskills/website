@@ -1,0 +1,86 @@
+/* Reset default styles for lists and list items */
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style for the navigation bar container */
+.navbar {
+    display: flex;
+    margin-left: 20px;
+}
+
+/* Style for the navigation bar items */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin: 10px;
+}
+
+/* Style for rounded corners */
+.navbar a {
+    display: inline-block;
+    font-size: x-small;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 25px;
+    /* Adjust the radius as needed */
+    transition: background-color 0.3s;
+    border-color: #000;
+    border: 1.5px solid;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    background-color: #000;
+    color: #fff;
+    border: #000;
+    text-decoration: none;
+}
+
+.thick-black-line {
+    width: 100%;
+}
+
+/* Default border width for smaller screens */
+.thick-black-line {
+    border-top: 1.5px solid #a4acdc;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .thick-black-line {
+        border-top: 1.5px solid #a4acdc; /* Adjust the thickness for larger screens */
+        margin-right: 50px;
+    }
+}
+
+.sidespace{
+    margin-left: 40px;
+    margin-right: 50px;
+}
+.h3-style{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.empty-whitespace {
+    white-space: pre;
+}
+
+.card-style {
+    /* width: 300px; /* Set the desired width for your card 
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflowing image if necessary 
+    background-color: #11113a; */
+    width: 18rem;
+    margin-right: 20px;
+    background-color: #11113a;
+}
+

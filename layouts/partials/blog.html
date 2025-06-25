@@ -1,0 +1,45 @@
+<br>
+<br>
+<br>
+<div>
+    <h5 class="sidepace h3-style">Categories</h3>
+</div>
+
+<div class="thick-black-line sidepace"></div>
+
+<div class="navbar">
+    <ul class="nav nav-pills flex-column flex-sm-row">
+        <li class="nav-item"><a onclick="setActive(0)">ALL</a></li>
+        <li class="nav-item"><a onclick="setActive(1)">MARKETING TRENDS</a></li>
+        <li class="nav-item"><a onclick="setActive(2)">CONTENT STRATEGY</a></li>
+        <li class="nav-item"><a onclick="setActive(3)">SOCIAL MEDIA</a></li>
+        <li class="nav-item"><a onclick="setActive(4)">SEO</a></li>
+        <li class="nav-item"><a onclick="setActive(5)">EMAIL MARKETING</a></li>
+        <li class="nav-item"><a onclick="setActive(6)">BRANDING</a></li>
+        <li class="nav-item"><a onclick="setActive(7)">CASE STUDIES</a></li>
+    </ul>
+</div>
+
+<div class="row">
+    {{ $cards := slice
+        (dict "image" "/images/blog-card-1.png" "title" "Blog Post 1" "description" "How We Revolutionize the  <br>   Customer Experience Using Augmented Reality")
+        (dict "image" "/images/blog-card-2.png" "title" "Blog Post 2" "description" "The Future of Marketing: <br> Predictions for the Next 5 Years<br> ")
+        (dict "image" "/images/blog-card-3.png" "title" "Blog Post 3" "description" "Crafting a Killer Content <br> Strategy: Tips and Tricks for Success")
+    }}
+    {{ range $index, $card := $cards }}
+        <div class="col-lg-4 mb-4">
+            <div class="card" style="background-color: #11113a; border-radius: 20px; border-color: #606cdc; border-width: 2px;">
+                <img src="{{ $card.image }}" alt="{{ $card.title }}" class="card-img-top" style="border-radius: 20px 20px 0px 0px; border-width: 1px;">
+                <div class="card-body">
+                    <p class="card-text" style="color: #fff; font-size: 25px; font-family: Arial, Helvetica, sans-serif;">
+                        {{ $card.description | safeHTML }}
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+</div>
+
+{{ partial "blogscript.html" . }}
+

@@ -1,0 +1,28 @@
+# netlify.toml
+
+[build]
+  publish = "public"
+  command = "hugo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.126.1"
+  HUGO_ENV = "production"
+
+# Optional: Redirect all 404s to your custom 404 page (if you have one)
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Optional: Set HTTP headers for performance/security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=3600"
+
+# Optional: Pretty URL handling (if not using permalinks)
+[permalinks]
+  blog = "/:slug/"
