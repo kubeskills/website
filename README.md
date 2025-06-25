@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bb8fc772-9629-49e3-8b59-518d73ad803e/deploy-status)](https://app.netlify.com/projects/jolly-babbage-df8b7b/deploys)
+
 # KubeSkills.com — The #1 Kubernetes Learning Community
 
 Welcome to the GitHub repository for [KubeSkills.com](https://kubeskills.com), an open, community-driven platform designed to help learners and professionals skill up in Kubernetes and Cloud Native technologies.
