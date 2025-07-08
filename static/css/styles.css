@@ -46,10 +46,8 @@ header {
 
 /* Style the logo */
 .logo img {
-    height: 100px; /* Adjust the height as needed */
-    width: 100px;
+    border: none;
     border-radius: 20px;
-    border-color: #606cdc;
 }
 
 /* Style the navigation links */
@@ -81,7 +79,9 @@ nav a.selected {
     font-weight: bold;
 }
 img {
-    border: none;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 .navbar .nav-link.active {
