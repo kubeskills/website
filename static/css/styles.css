@@ -81,7 +81,7 @@ nav a.selected {
     font-weight: bold;
 }
 img {
-    border: 3px solid;
+    border: none;
 }
 
 .navbar .nav-link.active {
