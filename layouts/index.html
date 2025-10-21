@@ -12,20 +12,30 @@
   </div>
 
   <!-- Hero -->
-  <section class="hero-modern position-relative overflow-hidden py-5">
-    <div class="container">
-      <div class="row align-items-center g-5">
+  <section class="hero-modern position-relative overflow-hidden">
+    <div class="hero-gradient"></div>
+    <div class="container py-5">
+      <div class="row align-items-center gy-5">
         <div class="col-12 col-lg-6 text-center text-lg-start">
-          <span class="hero-eyebrow badge text-dark bg-white rounded-pill px-3 py-2">
-            Kubernetes learners • Engineers • Leaders
-          </span>
-          <h1 class="display-4 fw-bold text-white mt-3">Level up your Kubernetes journey with KubeSkills</h1>
-          <p class="lead text-white-50 mt-3">
-            Join thousands of practitioners sharing real-world experiences, weekly live sessions, and hands-on labs to help you ship confidently in the cloud-native world.
+          <div class="hero-eyebrow d-inline-flex align-items-center gap-2 px-3 py-2">
+            <span class="dot"></span>
+            #1 Kubernetes Learning Community
+          </div>
+          <h1 class="hero-heading mt-3">Go from Kubernetes curious to production-ready with KubeSkills</h1>
+          <p class="hero-description mt-3">
+            Learn alongside platform engineers, SREs, and builders who ship real clusters every day. Live sessions, deep dives, and guided projects meet you where you are.
           </p>
-          <div class="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center justify-content-lg-start">
-            <a href="https://community.kubeskills.com" class="btn btn-light btn-lg shadow-sm">Join the Community</a>
-            <a href="https://community.kubeskills.com/courses" class="btn btn-outline-light btn-lg">View Courses</a>
+          <div class="hero-actions d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center justify-content-lg-start">
+            <a href="https://community.kubeskills.com" class="btn btn-primary btn-lg px-4">Join the Community</a>
+            <a href="https://community.kubeskills.com/courses" class="btn btn-outline-primary btn-lg px-4">Browse Courses</a>
+          </div>
+          <div class="hero-meta mt-4">
+            <p class="small text-white-50 mb-2">Trusted by engineers from</p>
+            <div class="brand-row d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+              <span class="brand-chip">Fortune 500</span>
+              <span class="brand-chip">Hypergrowth Startups</span>
+              <span class="brand-chip">Cloud-Native Teams</span>
+            </div>
           </div>
           <div class="social-pills d-flex flex-wrap gap-3 mt-4 justify-content-center justify-content-lg-start">
             <a class="social-pill" href="https://www.linkedin.com/company/kubeskills" target="_blank" aria-label="LinkedIn">
@@ -43,10 +53,25 @@
           </div>
         </div>
         <div class="col-12 col-lg-6">
-          <div class="glass-card shadow-lg mx-auto">
-            <h4 class="text-white mb-2">Join our Newsletter</h4>
-            <p class="text-white-50 mb-4">Subscribe to get Kubernetes skills directly in your inbox.</p>
-            <script async data-uid="024ce68ad3" src="https://awesome-pioneer-9305.ck.page/024ce68ad3/index.js"></script>
+          <div class="hero-card mx-auto">
+            <div class="hero-card-header">
+              <span class="badge bg-soft-primary text-primary">Stay in the loop</span>
+              <h3 class="mt-3 mb-2">Join the weekly KubeSkills digest</h3>
+              <p class="text-muted mb-0">Actionable tips, live session invites, and new labs—straight to your inbox.</p>
+            </div>
+            <div class="mt-4">
+              <script async data-uid="024ce68ad3" src="https://awesome-pioneer-9305.ck.page/024ce68ad3/index.js"></script>
+            </div>
+            <div class="hero-card-footer mt-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="avatar-stack">
+                  <span class="avatar-circle"></span>
+                  <span class="avatar-circle"></span>
+                  <span class="avatar-circle"></span>
+                </div>
+                <p class="mb-0 small text-muted">8,000+ community members levelling up with Kubernetes every month.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -54,7 +79,7 @@
   </section>
 
   <!-- Value Props -->
-  <section class="py-5 bg-light">
+  <section class="py-5 benefits-section">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-12 col-lg-8 text-center">
@@ -95,7 +120,7 @@
   </section>
 
   <!-- Video / Preview -->
-  <section class="py-5">
+  <section class="py-5 bg-white">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-12 col-lg-6 order-lg-2">
@@ -112,7 +137,7 @@
           <p class="text-muted mt-3">
             Whether you are preparing for the CKA, shipping production clusters, or building platform guardrails, the KubeSkills community gives you the confidence to move faster without breaking things.
           </p>
-          <ul class="list-unstyled text-muted mt-3">
+          <ul class="list-unstyled text-muted mt-4 community-checklist">
             <li class="mb-2"><i class="la la-check-circle text-primary me-2"></i>Hands-on labs and guided learning paths</li>
             <li class="mb-2"><i class="la la-check-circle text-primary me-2"></i>Private forums for architecture reviews and career advice</li>
             <li><i class="la la-check-circle text-primary me-2"></i>On-demand recordings so you never miss a session</li>
