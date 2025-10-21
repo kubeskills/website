@@ -13,8 +13,9 @@ title = 'KubeSkills'
         params = { external = true }
     [[menu.main]]
         name= "Courses"
-        url = "/courses/"
+        url = "https://community.kubeskills.com/courses"
         weight = 2
+        params = { external = true }
     [[menu.main]]
         name = "Community"
         url = "https://community.kubeskills.com"
