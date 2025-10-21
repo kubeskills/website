@@ -1,41 +1,25 @@
 {{ define "main" }}
 
-<div class="container py-5">
-  <!-- Pricing Card 1 -->
-  <div class="pricing-card mb-5" style="background: #1c1038; color: white; padding: 20px; border-radius: 10px;">
-    <h2>FREE</h2>
-    <p>Access to our Kubernetes 101, and project courses</p>
-    <a href="https://community.kubeskills.com/courses" class="btn btn-primary">Join FREE</a>
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 text-center">
+        <h1 class="mb-3">KubeSkills Courses</h1>
+        <p class="lead text-muted mb-4">
+          Explore our full catalog of Kubernetes courses, live sessions, and hands-on labs inside the KubeSkills community.
+        </p>
+        <a
+          href="https://community.kubeskills.com/courses"
+          class="btn btn-primary btn-lg"
+          target="_blank"
+          rel="noopener"
+        >
+          View Courses
+        </a>
+      </div>
+    </div>
   </div>
-
-  <!-- Pricing Card 2 -->
-  <div class="pricing-card mb-5" style="background: #594483; color: white; padding: 20px; border-radius: 10px;">
-    <h2>$499</h2>
-    <p>Access to 500+ lessons and exclusive Q&As</p>
-    <a href="https://community.kubeskills.com/c/pro-content" class="btn btn-primary">More Details</a>
-  </div>
-
-  <!-- Pricing Card 3 -->
-  <div class="pricing-card mb-5" style="background: #463b5f; color: white; padding: 20px; border-radius: 10px;">
-    <h2>$20</h2>
-    <p>Learn Kubernetes and Container Security</p>
-    <a href="https://community.kubeskills.com/c/container-security-course-videos" class="btn btn-primary">More Details</a>
-  </div>
-
-  <!-- Pricing Card 4 -->
-  <div class="pricing-card mb-5" style="background: #4a3b68; color: white; padding: 20px; border-radius: 10px;">
-    <h2>$49</h2>
-    <p>KCSA Course: Ace the KCSA Exam!</p>
-    <a href="https://community.kubeskills.com/c/kcsa-course-videos" class="btn btn-primary">More Details</a>
-  </div>
-  
-  <!-- Pricing Card 5 -->
-  <div class="pricing-card mb-5" style="background: #4a3b68; color: white; padding: 20px; border-radius: 10px;">
-    <h2>$129</h2>
-    <p>CKA Book Course: Ace the CKA Exam!</p>
-    <a href="https://community.kubeskills.com/c/cka-book-course-videos" class="btn btn-primary">More Details</a>
-  </div>
-</div>
+</section>
 
 
 {{ end }}
