@@ -487,3 +487,114 @@ img {
 .community-checklist i {
     font-size: 1rem;
 }
+
+/* Cookie banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(960px, calc(100% - 2rem));
+    background: rgba(10, 17, 34, 0.92);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    box-shadow: 0 35px 60px rgba(7, 11, 23, 0.35);
+    border-radius: 20px;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    z-index: 50;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.cookie-banner.is-hidden {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    pointer-events: none;
+}
+
+.cookie-banner__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.cookie-banner__content strong {
+    font-size: 1.05rem;
+    color: #f8fafc;
+}
+
+.cookie-banner__content p {
+    margin: 0;
+    color: rgba(226, 232, 240, 0.72);
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.cookie-banner__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: stretch;
+    min-width: 160px;
+}
+
+.cookie-banner__link {
+    font-size: 0.85rem;
+    color: rgba(148, 197, 255, 0.9);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.cookie-banner__button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.65rem 1.2rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cookie-banner__button--accept {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: #0f172a;
+    box-shadow: 0 18px 35px rgba(59, 130, 246, 0.35);
+}
+
+.cookie-banner__button--accept:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 24px 45px rgba(59, 130, 246, 0.45);
+}
+
+.cookie-banner__button--decline {
+    background: rgba(15, 23, 42, 0.65);
+    color: rgba(226, 232, 240, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.cookie-banner__button--decline:hover {
+    background: rgba(15, 23, 42, 0.85);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 767.98px) {
+    .cookie-banner {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.25rem;
+        align-items: stretch;
+    }
+
+    .cookie-banner__actions {
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .cookie-banner__link {
+        text-align: left;
+    }
+}

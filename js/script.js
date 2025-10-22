@@ -20,4 +20,45 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
+    var cookieBanner = document.getElementById("cookieBanner");
+    var acceptButton = document.getElementById("cookieAcceptButton");
+    var declineButton = document.getElementById("cookieDeclineButton");
+
+    function hideCookieBanner() {
+        if (!cookieBanner) {
+            return;
+        }
+
+        if (!cookieBanner.classList.contains("is-hidden")) {
+            cookieBanner.classList.add("is-hidden");
+            cookieBanner.setAttribute("aria-hidden", "true");
+        }
+    }
+
+    if (cookieBanner) {
+        var storedConsent = localStorage.getItem("kubeskills-cookie-consent");
+
+        if (!storedConsent) {
+            requestAnimationFrame(function () {
+                cookieBanner.classList.remove("is-hidden");
+                cookieBanner.setAttribute("aria-hidden", "false");
+            });
+        } else {
+            cookieBanner.setAttribute("aria-hidden", "true");
+        }
+
+        if (acceptButton) {
+            acceptButton.addEventListener("click", function () {
+                localStorage.setItem("kubeskills-cookie-consent", "accepted");
+                hideCookieBanner();
+            });
+        }
+
+        if (declineButton) {
+            declineButton.addEventListener("click", function () {
+                localStorage.setItem("kubeskills-cookie-consent", "declined");
+                hideCookieBanner();
+            });
+        }
+    }
 });
