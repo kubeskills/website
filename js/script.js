@@ -1,24 +1,23 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the current URL path
-    var path = window.location.pathname;
+    var navToggle = document.querySelector(".nav-toggle");
+    var navLinks = document.querySelector(".nav-links");
 
-    // Remove the leading slash (if present) from the path
-    var page = path.replace(/^\/+/g, '');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener("click", function () {
+            var isOpen = navLinks.classList.toggle("is-open");
+            navToggle.classList.toggle("active", isOpen);
+            navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
 
-    // Get all the navigation links
-    var navLinks = document.querySelectorAll("nav ul li a");
-
-    // Loop through the links and add the "selected" class to the active link
-    navLinks.forEach(function (link) {
-        var linkPath = link.getAttribute("href");
-
-        // Remove the leading slash (if present) from the linkPath
-        linkPath = linkPath.replace(/^\/+/g, '');
-
-        // Check if the current page exactly matches the link path
-        if (page === linkPath) {
-            link.classList.add("selected");
-        }
-    });
+        navLinks.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (navLinks.classList.contains("is-open")) {
+                    navLinks.classList.remove("is-open");
+                    navToggle.classList.remove("active");
+                    navToggle.setAttribute("aria-expanded", "false");
+                }
+            });
+        });
+    }
 });

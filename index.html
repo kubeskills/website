@@ -27,29 +27,26 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="/">KubeSkills</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
-              aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a class="nav-logo" href="/">
+        <span class="nav-logo-accent">Kube</span>Skills
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link px-3 py-2" href="https://blog.kubeskills.com" target="_blank" rel="noopener">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-2" href="https://community.kubeskills.com/courses" target="_blank" rel="noopener">Courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 py-2 custom-active-nav" href="https://community.kubeskills.com" target="_blank" rel="noopener">Community</a>
-          </li>
-        </ul>
-      </div>
+      <nav class="nav-links" id="primaryNav">
+        <a class="nav-link" href="https://blog.kubeskills.com" target="_blank" rel="noopener">Blog</a>
+        <a class="nav-link" href="https://community.kubeskills.com/courses" target="_blank" rel="noopener">Courses</a>
+        <a class="nav-cta" href="https://community.kubeskills.com" target="_blank" rel="noopener">
+          <span>Join the Community</span>
+          <i class="la la-arrow-right"></i>
+        </a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <div class="page-wrapper">
     <div id="ht-preloader">
