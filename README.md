@@ -1,39 +1,30 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bb8fc772-9629-49e3-8b59-518d73ad803e/deploy-status)](https://app.netlify.com/projects/jolly-babbage-df8b7b/deploys)
+# KubeSkills Landing Page
 
-# KubeSkills.com — The #1 Kubernetes Learning Community
+This repository now hosts the KubeSkills marketing site as a plain static webpage. The entire experience is rendered from a single `index.html` file with accompanying CSS, JavaScript, font, and image assets.
 
-Welcome to the GitHub repository for [KubeSkills.com](https://kubeskills.com), an open, community-driven platform designed to help learners and professionals skill up in Kubernetes and Cloud Native technologies.
+## Getting Started
 
-This site is built with [Hugo](https://gohugo.io), styled with Bootstrap, and deployed on [Netlify](https://netlify.com). It features a custom theme and is designed for performance, accessibility, and clarity.
+- Double-click `index.html` or open it in your browser of choice.
+- Alternatively, serve the directory with any static web server (for example, `python3 -m http.server 8080`) to test relative links and newsletter embeds locally.
 
----
+## Project Structure
 
-## 🚀 Overview
-
-KubeSkills.com provides:
-
-- 🧠 **Educational content** on Kubernetes, containers, DevOps, and cloud-native tools
-- 📬 A **newsletter signup** via ConvertKit for community updates
-- 🎥 Embedded **video hero section**
-- 💡 A pricing and courses page with detailed offerings
-- 🌐 External redirects to the [blog](https://blog.kubeskills.com) and [community platform](https://community.kubeskills.com)
-
----
-
-## 📂 Project Structure
-
-```bash
+```text
 .
-├── content/                # Markdown content files
-│   └── courses/            # Course descriptions and pricing
-├── layouts/               # Custom HTML templates
-│   ├── _default/          # baseof.html, single.html
-│   ├── courses/           # list.html for courses landing page
-│   └── partials/          # nav.html, footer.html, etc.
-├── static/                # Static assets (CSS, JS, images)
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── themes/                # Custom theme (optional)
-├── netlify.toml           # Netlify deployment config
-└── hugo.toml              # Site configuration
+├── css/        # Stylesheets (Bootstrap, theme, custom styles)
+├── fonts/      # Font assets used by the theme
+├── images/     # Logos, hero art, icons, and favicon
+├── js/         # JavaScript dependencies and theme scripts
+└── index.html  # Main landing page markup
+```
+
+## Deployment
+
+Upload the contents of this repository to any static hosting provider (Netlify, GitHub Pages, S3, etc.). No build step is required—just ensure the directory structure remains intact so the relative asset paths continue to resolve.
+
+## Customisation Tips
+
+- Update copy or layouts directly inside `index.html`.
+- Extend or override styling in `css/styles.css`.
+- Replace assets by dropping new files into `images/`, keeping the filenames in sync with the markup.
+- Newsletter functionality is provided through the embedded ConvertKit script near the top of the page.
