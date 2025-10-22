@@ -16,6 +16,7 @@
 
   <!-- Font Awesome for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>const queryString=window.location.search;const urlParams=new URLSearchParams(queryString);const affiliateCode=urlParams.get('affiliate_code');const circleUrls='kubeskills.circle.so,community.kubeskills.com'.split(',');if(affiliateCode){let now=new Date;let days=60;now.setTime(now.getTime()+days*24*60*60*1e3);document.cookie='affiliate_code='+affiliateCode+'; expires='+now.toUTCString()+';'}function getAffiliateCodeCookie(){let cookieArr=document.cookie.split(';');let affiliateCodeCookie=cookieArr.find(cookie=>cookie.split('=')[0].trim()==='affiliate_code');if(affiliateCodeCookie)return decodeURIComponent(affiliateCodeCookie.split('=')[1])}function isCircleUrl(url){return circleUrls.some(circleUrl=>{let circleUrlRegex=new RegExp('^https?://'+circleUrl+'.*');return url.match(circleUrlRegex)})}document.addEventListener('DOMContentLoaded',function(){let links=document.getElementsByTagName('a');let storedAffiliateCode=getAffiliateCodeCookie();if(storedAffiliateCode){for(let i=0;i<links.length;i++){let href=links[i].href;if(href&&isCircleUrl(href)){href+=(href.match(/\?/)?'&':'?')+'affiliate_code='+storedAffiliateCode;links[i].href=href}}}})</script>
 </head>
 <body>
 
