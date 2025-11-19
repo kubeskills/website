@@ -598,3 +598,269 @@ img {
         text-align: left;
     }
 }
+
+/* Grow page */
+
+.grow-page {
+    background-color: #f8fafc;
+}
+
+.grow-hero {
+    background: radial-gradient(circle at top left, #1d4ed8, #0f172a 60%);
+    color: #e2e8f0;
+}
+
+.grow-hero-backdrop {
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+    background: url("../images/about/07.png") no-repeat right top / cover;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+.grow-hero-eyebrow {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(226, 232, 240, 0.85);
+}
+
+.grow-hero-heading {
+    color: #f8fafc;
+    font-weight: 700;
+}
+
+.grow-hero-card {
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 197, 255, 0.25);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 40px 80px rgba(8, 15, 40, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.grow-hero-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.6), rgba(14, 165, 233, 0.4));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.grow-hero-card .badge {
+    background-color: rgba(59, 130, 246, 0.12);
+}
+
+.grow-highlight-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.grow-highlight-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: rgba(226, 232, 240, 0.95);
+    margin-bottom: 0.85rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.grow-highlight-list li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.grow-section {
+    position: relative;
+    z-index: 10;
+}
+
+.grow-card {
+    background-color: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.grow-card i {
+    font-size: 1.75rem;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+.grow-card h5 {
+    font-weight: 600;
+}
+
+.grow-visual-card {
+    position: relative;
+}
+
+.grow-visual-badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    background: rgba(15, 23, 42, 0.9);
+    color: #f8fafc;
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+    box-shadow: 0 25px 45px rgba(15, 23, 42, 0.45);
+    font-size: 0.95rem;
+}
+
+.grow-checklist {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.grow-checklist li {
+    background: #fff;
+    border-radius: 999px;
+    padding: 0.85rem 1.2rem;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    color: #0f172a;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.grow-checklist li::before {
+    content: \"✔\";
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.grow-steps {
+    counter-reset: grow-step;
+    list-style: none;
+    padding-left: 0;
+}
+
+.grow-steps li {
+    counter-increment: grow-step;
+    padding-left: 3.25rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.grow-steps li::before {
+    content: counter(grow-step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 999px;
+    background: #2563eb;
+    color: #f8fafc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.grow-community-card {
+    background: linear-gradient(135deg, #312e81, #0f172a);
+    border-radius: 24px;
+    padding: 2rem;
+    color: #f8fafc;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.35);
+}
+
+.grow-community-card p {
+    color: rgba(248, 250, 252, 0.85);
+}
+
+.grow-community-card a {
+    color: #c7d2fe;
+}
+
+.grow-cta-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grow-cta-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.25rem;
+    background: rgba(248, 250, 252, 0.08);
+    border-radius: 12px;
+    color: #f8fafc;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.grow-cta-links a:hover {
+    transform: translateY(-2px);
+    background: rgba(248, 250, 252, 0.18);
+}
+
+.grow-plus {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(147, 197, 253, 0.25));
+}
+
+.grow-plus-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 1.75rem 1.5rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.08);
+    height: 100%;
+}
+
+.grow-plus-card i {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 991.98px) {
+    .grow-hero-backdrop {
+        background-size: cover;
+        filter: blur(40px);
+    }
+
+    .grow-visual-badge {
+        position: static;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .grow-hero-card {
+        padding: 1.5rem;
+    }
+
+    .grow-steps li {
+        padding-left: 2.75rem;
+    }
+
+    .grow-steps li::before {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+}

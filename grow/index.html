@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GROW | GitHub Repository of Work | KubeSkills</title>
+  <meta name="description" content="GROW (GitHub Repository of Work) turns your Kubernetes learning into a living GitHub portfolio. Fork the template, document everything, and show your progress.">
+  <meta name="keywords" content="Kubernetes, GitHub portfolio, GROW, KubeSkills">
+  <meta name="author" content="KubeSkills">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/line-awesome.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>const queryString=window.location.search;const urlParams=new URLSearchParams(queryString);const affiliateCode=urlParams.get('affiliate_code');const circleUrls='kubeskills.circle.so,community.kubeskills.com'.split(',');if(affiliateCode){let now=new Date;let days=60;now.setTime(now.getTime()+days*24*60*60*1e3);document.cookie='affiliate_code='+affiliateCode+'; expires='+now.toUTCString()+';'}function getAffiliateCodeCookie(){let cookieArr=document.cookie.split(';');let affiliateCodeCookie=cookieArr.find(cookie=>cookie.split('=')[0].trim()==='affiliate_code');if(affiliateCodeCookie)return decodeURIComponent(affiliateCodeCookie.split('=')[1])}function isCircleUrl(url){return circleUrls.some(circleUrl=>{let circleUrlRegex=new RegExp('^https?://'+circleUrl+'.*');return url.match(circleUrlRegex)})}document.addEventListener('DOMContentLoaded',function(){let links=document.getElementsByTagName('a');let storedAffiliateCode=getAffiliateCodeCookie();if(storedAffiliateCode){for(let i=0;i<links.length;i++){let href=links[i].href;if(href&&isCircleUrl(href)){href+=(href.match(/\?/)?'&':'?')+'affiliate_code='+storedAffiliateCode;links[i].href=href}}}})</script>
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a class="nav-logo" href="/">
+        <span class="nav-logo-accent">Kube</span>Skills
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="primaryNav">
+        <a class="nav-link" href="https://blog.kubeskills.com" target="_blank" rel="noopener">Blog</a>
+        <a class="nav-link" href="https://community.kubeskills.com/courses" target="_blank" rel="noopener">Courses</a>
+        <a class="nav-cta" href="https://community.kubeskills.com" target="_blank" rel="noopener">
+          <span>Join the Community</span>
+          <i class="la la-arrow-right"></i>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <main class="grow-page">
+      <section class="grow-hero position-relative overflow-hidden">
+        <div class="grow-hero-backdrop"></div>
+        <div class="container py-5 position-relative">
+          <div class="row align-items-center gy-5">
+            <div class="col-12 col-lg-6 text-center text-lg-start">
+              <p class="grow-hero-eyebrow">🎸 WANTED: Devs &amp; DevOps Who want to rock the cloud-native stage 🎸</p>
+              <p class="grow-hero-subtitle fst-italic">(Yes, we’re talking to you.)</p>
+              <h1 class="grow-hero-heading mt-3">Become a Kubernetes Rockstar: Your GitHub Portfolio Starts with GROW</h1>
+              <p class="mt-3 text-white-50">What if learning Kubernetes wasn’t just about passing a course… but building your GitHub portfolio, proving your skills, and leveling up your career?</p>
+              <div class="grow-hero-actions d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-center justify-content-lg-start">
+                <a class="btn btn-primary btn-lg px-4" href="https://github.com/kubeskills/grow" target="_blank" rel="noopener">Fork the template</a>
+                <a class="btn btn-outline-light btn-lg px-4" href="https://community.kubeskills.com" target="_blank" rel="noopener">Meet the community</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="grow-hero-card">
+                <span class="badge bg-soft-primary text-primary rounded-pill px-3 py-2">Introducing GROW · GitHub Repository of Work</span>
+                <p class="mt-3 mb-4">From the crew at <a href="https://kubeskills.com" class="link-light" target="_blank" rel="noopener"><strong>KubeSkills</strong></a>, GROW is where your Kubernetes journey turns into a living, breathing portfolio of YAML-powered awesomeness.</p>
+                <h3 class="h5 text-white">🚀 How does it work?</h3>
+                <ul class="grow-highlight-list mt-3 mb-4">
+                  <li>Fork a <a href="https://github.com/kubeskills/grow" target="_blank" rel="noopener">ready-to-rock GitHub repo</a> template</li>
+                  <li>Document your labs, reflections, configs, and tools</li>
+                  <li>Show the world what you're made of (hint: containers and grit)</li>
+                  <li>Level up with badges (Starter → Bronze → Silver → Gold)</li>
+                </ul>
+                <p class="fw-semibold text-white mb-0">This isn’t homework, it’s your future resume.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grow-section py-5">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-12 col-lg-6 order-lg-2">
+              <div class="grow-visual-card">
+                <img src="/images/about/07.png" alt="KubeSkills learners collaborating" class="img-fluid rounded-4 shadow-lg">
+                <div class="grow-visual-badge">
+                  <span class="text-uppercase">Built with community</span>
+                  <strong>Kubernetes projects, reflections, configs, and wins—documented in one repo.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p class="text-uppercase text-primary fw-semibold mb-2">🪴 What you’ll gain</p>
+              <h2 class="fw-bold">Employers want to see what you can do.</h2>
+              <p class="text-muted mt-3">With GROW, they can:</p>
+              <div class="row g-3 mt-2">
+                <div class="col-12 col-md-6">
+                  <div class="grow-card h-100">
+                    <i class="la la-folder-open"></i>
+                    <h5>Browse real work</h5>
+                    <p>Show YAML, GitOps templates, and security configs straight from your repo.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="grow-card h-100">
+                    <i class="la la-github"></i>
+                    <h5>Track your progress</h5>
+                    <p>Let hiring managers see your Git history and how you keep learning.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="grow-card h-100">
+                    <i class="la la-shield-alt"></i>
+                    <h5>Build confidence</h5>
+                    <p>Give interviewers proof of your knowledge before the call even starts.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grow-section py-5 bg-light">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-12 col-lg-5">
+              <p class="text-uppercase text-primary fw-semibold mb-2">📈 Learning that scales</p>
+              <h2 class="fw-bold mb-3">Whether you’re just starting out or running production.</h2>
+              <p class="text-muted">No matter where you are in your Kubernetes journey, GROW keeps every victory in one place.</p>
+            </div>
+            <div class="col-12 col-lg-7">
+              <ul class="grow-checklist">
+                <li>Creating your first pod</li>
+                <li>Securing clusters with Network Policies</li>
+                <li>Automating deployments with FluxCD</li>
+                <li>Launching your portfolio site on GitHub Pages</li>
+              </ul>
+              <p class="mt-4 mb-0 fw-semibold text-dark">GROW has everything you need to show your work—entirely yours and entirely open source.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grow-section py-5">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-12 col-lg-6">
+              <h2 class="fw-bold">❓ Have questions? Submit a PR!</h2>
+              <p class="text-muted mt-3">If you hit a roadblock or you’re unsure of something, the KubeSkills community has your back.</p>
+              <ol class="grow-steps mt-4">
+                <li>Create a file like <code>99-reflections/weekX.md</code> or <code>questions/question.md</code></li>
+                <li>Add your question and context (what you tried, what you expected, and any doubts)</li>
+                <li>Submit a Pull Request titled: <code>question: [Your Topic]</code></li>
+              </ol>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="grow-community-card">
+                <h3 class="h5">🙌 Let’s GROW together</h3>
+                <p>Start for FREE. No gatekeeping. No fluff. Just skills.</p>
+                <p class="mb-4">Are you ready to fork your future?</p>
+                <div class="grow-cta-links">
+                  <a href="https://github.com/kubeskills/grow" target="_blank" rel="noopener">
+                    <i class="la la-book"></i>
+                    Grab the notebook template
+                  </a>
+                  <a href="https://x.com/intent/tweet?text=%23KubeSkillsGROW" target="_blank" rel="noopener">
+                    <i class="la la-hashtag"></i>
+                    Share your progress with #KubeSkillsGROW
+                  </a>
+                  <a href="mailto:notebooks@kubeskills.com">
+                    <i class="la la-envelope"></i>
+                    Email us your notebook to get featured
+                  </a>
+                </div>
+                <p class="mt-4 mb-0 text-muted">🌍 At <a href="https://kubeskills.com" target="_blank" rel="noopener">KubeSkills</a>, we don’t just teach Kubernetes—we help build cloud native careers. Let’s do this. 💪</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grow-plus py-5">
+        <div class="container text-center">
+          <p class="text-uppercase text-primary fw-semibold mb-2">🌐 Want even more?</p>
+          <h2 class="fw-bold">Coming soon: GROW+</h2>
+          <p class="text-muted mt-3">Yeah, we’re taking it further.</p>
+          <div class="row g-4 mt-4">
+            <div class="col-12 col-md-4">
+              <div class="grow-plus-card">
+                <i class="la la-user-check"></i>
+                <h5>1:1 reviews with instructors</h5>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="grow-plus-card">
+                <i class="la la-certificate"></i>
+                <h5>Verified badges for your LinkedIn profile</h5>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="grow-plus-card">
+                <i class="la la-bullhorn"></i>
+                <h5>Community spotlight on our site</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="bg-dark text-light py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2025 KubeSkills — All rights reserved.</p>
+      <p class="mt-1">
+        <a href="https://kubeskills.com" class="text-light">Visit our homepage</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="cookie-banner is-hidden" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent notice">
+    <div class="cookie-banner__content">
+      <strong>We use cookies</strong>
+      <p>We rely on cookies to personalize content and to analyze our traffic. Please decide if you are willing to accept cookies from our site.</p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="cookie-banner__button cookie-banner__button--accept" type="button" id="cookieAcceptButton">Accept all cookies</button>
+      <button class="cookie-banner__button cookie-banner__button--decline" type="button" id="cookieDeclineButton">Decline</button>
+      <a class="cookie-banner__link" href="https://kubeskills.com/privacy" target="_blank" rel="noopener">Privacy policy</a>
+    </div>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
