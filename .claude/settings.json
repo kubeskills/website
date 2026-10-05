@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./css/bootstrap.min.css)",
+      "Read(./css/line-awesome.min.css)",
+      "Read(./fonts/**)"
+    ]
+  }
+}
