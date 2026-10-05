@@ -933,3 +933,34 @@ img {
         height: 2.25rem;
     }
 }
+
+/* Thank you page */
+.thank-you-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #0f1326;
+    color: #f8fafc;
+}
+
+.thank-you-heading {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.thank-you-text {
+    color: #cbd5f5;
+    margin-bottom: 2rem;
+}
+
+.thank-you-link {
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.thank-you-link:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
