@@ -35,8 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    if (cookieBanner) {
-        var storedConsent = localStorage.getItem("kubeskills-cookie-consent");
+    var consent = window.kubeskillsConsent;
+
+    if (cookieBanner && consent) {
+        var storedConsent = consent.get();
 
         if (!storedConsent) {
             requestAnimationFrame(function () {
@@ -49,14 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (acceptButton) {
             acceptButton.addEventListener("click", function () {
-                localStorage.setItem("kubeskills-cookie-consent", "accepted");
+                consent.accept();
                 hideCookieBanner();
             });
         }
 
         if (declineButton) {
             declineButton.addEventListener("click", function () {
-                localStorage.setItem("kubeskills-cookie-consent", "declined");
+                consent.decline();
                 hideCookieBanner();
             });
         }
